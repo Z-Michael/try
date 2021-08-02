@@ -4,7 +4,8 @@
 }
 
 h1{
-    color:white;
+    color:rgb(231, 42, 42);
+    padding-top:40px;
 }
 
 hr{
@@ -13,6 +14,13 @@ hr{
     background-color:black;
     margin-left: auto;
     margin-right: auto;
+}
+
+button{
+text-transform: uppercase;
+padding:5px;
+font-family:'Courier New';
+font-weight:bold;
 }
 
 .container, .back{
@@ -50,8 +58,15 @@ hr{
 .counter{
     background-color:rgb(221, 133, 233);
     height:500px;
-    margin: 0;
+    padding:10px;
     text-align:center;
-    padding-top: 30px;
     
+    
+}
+
+span{
+    font-size: 100px;
+    color:rgb(218, 108, 108);
+    margin:40px;
+    padding:50px;
 }

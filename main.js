@@ -17,27 +17,34 @@ sel.onchange = function () {
 
             // counter page js
 
-let counter = 0;
+let count = 0;
 
 const value = document.querySelector("#value");
-const btn = document.querySelectorAll(".btn");
+const btns = document.querySelectorAll(".btn");
 
-btn.forEach(function (btn) {
+btns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
-        const styles = e.currentTarget.classlist;
-        if (styles.includes("decrease")) {
-            console.log(styles.includes("btn"));
-
-            counter--;
+        const styles = e.currentTarget.classList;
+        if (styles.contains('decrease')) {
+            count--;
         }
-        else if (styles.contains("increase")) {
-            counter++;
+        else if (styles.contains('increase')) {
+            count++;
         }
         else {
-        counter = 0;
-            }
+        count = 0;
+        }
+        if (count>0) {
+            value.style.color="white"
+        }
+        if (count<0) {
+            value.style.color="blue"
+        }
+        if (count==0) {
+            value.style.color="black"
+        }
     
-        value.textContent = counter;
+        value.textContent = count;
   
     })
 
