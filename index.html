@@ -3,25 +3,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 
   <!-- Color changer  -->
-  <div class="container">
-   <h1>Color changer </h1>
+  <div  class="container">
+   <h1 data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">Color changer </h1>
   <p id="para">The color will change here</p> 
   <div class="first">
       <button data-background="green" data-color ="red">Red</button>
       <button data-background="yellow" data-color ="blue">blue</button>
-      <button data-background="white" data-color ="pink">pink</button>
+      <button data-background="white" data-color ="green">green</button>
 
 
 
       
   </div>
-   <select class="second">
+   <select class="second ">
   <option value="black">black</option>
  <option value="white">white</option>
   <option value="yellow">yellow</option>
@@ -37,7 +40,9 @@
 
   <!--  Next counter project -->
     <div class="counter">
-  <h1>Counter</h1>
+  <h1 class="fix" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">Counter</h1>
   <span id="value">0</span>
   <div class="button-list">
       <button class="btn decrease"> decrease</button>
@@ -49,6 +54,17 @@
 </body>
 
 <script src="main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+  delay:200,
+  duration:1200,
+  once:true,
+  mirror: false,
+  })
+</script>
+
 </html>
 =======
 >>>>>>> master

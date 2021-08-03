@@ -1,11 +1,14 @@
+
+$h1Color:rgb(240, 221, 221);
+
 *
 {
     margin: 0;
 }
 
 h1{
-    color:rgb(231, 42, 42);
-    padding-top:40px;
+    color: $h1Color;
+    
 }
 
 hr{
@@ -34,7 +37,7 @@ font-weight:bold;
 }
 
 #para {
-    background-color:rgb(0, 255, 21);
+    background-color:rgb(179, 207, 226);
     width:400px;
     border-radius: 75%;
     padding:30px;
@@ -58,12 +61,14 @@ font-weight:bold;
 .counter{
     background-color:rgb(221, 133, 233);
     height:500px;
-    padding:10px;
+    padding:20px;
     text-align:center;
     
     
 }
-
+.fix{
+    padding-top: 50px;
+}
 span{
     font-size: 100px;
     color:rgb(218, 108, 108);
