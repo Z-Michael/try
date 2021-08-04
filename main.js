@@ -61,7 +61,7 @@ btn.addEventListener('click', function(){
     
     let tipAmount = document.getElementById('tip-amount').value = billAmount / tipPercentage;
     document.getElementById('total-bill').value = parseFloat(billAmount) + parseFloat(tipAmount);
-    alert('Your billAmount is: ' + billAmount + ' ' + 'hope your enjoyed our service , see you soon :)')
+    alert('Your bill Amount is: ' + billAmount + ' ' + 'hope your enjoyed our service , see you soon :)')
     
 
 })
