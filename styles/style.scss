@@ -28,14 +28,23 @@ font-weight:bold;
 border-radius:50%;
 border:none;
 margin-bottom: 20px;
+ display: inline-block;
+    padding:10px;
+    border:1px solid;
+    background-color:white;
+    border-radius:10px;
+    cursor: pointer;
+    margin-top: 0;
 }
 
-.container, .counter{
+.container, .counter, .color-flipper{
     height: 80vh;
     font-size:30px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction:column;
-    text-align:center;
+    
     background-color:rgb(143, 123, 123);
     padding:40px;
     row-gap: 70px;
@@ -69,9 +78,79 @@ select option {
 
 
 
+
 span{
     font-size: 100px;
     color:rgb(218, 108, 108);
     margin:40px;
     padding:50px;
+}
+
+
+
+.color-flipper{
+    background-color:red;
+    margin-top: -43px;
+}
+
+
+// tip calculator
+
+#tip-container {
+    height: 80vh;
+    width: 350px;
+    background-color: #dfdbd2;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 75px 75px 75px 75px ;
+    grid-template-areas: 
+    ". bill-amount"
+    ". tip-percentage"
+    ". tip-amount"
+    ". total-bill"
+    "btn btn";
+    margin:0 auto;
+    border: 5px solid #eaeee6;
+    padding: 25px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+#bill-amount {
+    grid-area: bill-amount;
+    height: 25px;
+    width: 250px;
+}
+
+#tip-percentage {
+    grid-area: tip-percentage;
+    height: 25px;
+    width: 250px;
+}
+
+#tip-amount {
+    grid-area: tip-amount;
+    height: 25px;
+    width: 250px;
+}
+
+#total-bill {
+    grid-area: total-bill;
+    height: 25px;
+    width: 250px;
+}
+
+#btn {
+    grid-area: btn;
+    height: 25px;
+    width: auto;
+    padding-bottom:25px;
+}
+
+.update {
+    color:black;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size:x-large;
+  font-weight: 800;
 }
