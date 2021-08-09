@@ -79,6 +79,7 @@ select option {
   background-color: #3e4747;
   margin-bottom: 40px;
   row-gap: 30px;
+  width:70px;
 }
 
 span {
